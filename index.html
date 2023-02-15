@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b6a4693a3f.js" crossorigin="anonymous"></script>
+    <script src="../index.js"></script>
+    <title>Jammer</title>
+</head>
+<body>
+    <div class="container">
+       <div class="items">
+            <div class="button-group">
+                <button type="button" class="tab active" id="pomodoro">Pomodoro</button>
+                <button type="button" class="tab" id="short-break">Short Break</button>
+                <button type="button" class="tab" id="long-break">Long Break</button>
+            </div>
+            <div class="time">
+                <span id="minContainer">
+                    <input type="number" id="min"  value="25" >
+                    <h6>min</h6>
+                </span>
+                <span id="sep"><h6>:</h6></span>
+                <span id="secContainer">
+                    <input type="number" id="sec"  value="00">
+                    <h6>sec</h6>
+                </span>
+            </div>
+            <button type="button" id="event">Start</button>
+            <button type="button" id="reset"><i class="fa-solid fa-arrows-rotate"></i></button>
+        </div>
+    </div>
+</body>
+</html>
