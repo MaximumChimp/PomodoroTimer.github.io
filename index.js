@@ -27,7 +27,7 @@ $(document).ready(function(){
          };
          
          if(minutes == 0 && seconds == 0){
-            audio = new Audio('../audio/bell.wav')
+            audio = new Audio('./audio/bell.wav')
             clearInterval(counter)
             audio.play();
            
@@ -73,7 +73,7 @@ reset();
              //Editable
             $('input[id="min"]').prop('readonly',true)
             $('input[id="sec"]').prop('readonly',true)  
-            var push = new Audio('../audio/Button.mp3');
+            var push = new Audio('./audio/Button.mp3');
             push.play();
     
             $('.container').css({
@@ -101,7 +101,7 @@ reset();
             //Editable
            $('input[id="min"]').prop('readonly',false)
            $('input[id="sec"]').prop('readonly',false)  
-           var push = new Audio('../audio/Button.mp3');
+           var push = new Audio('./audio/Button.mp3');
            push.play();
    
            $('.container').css({
